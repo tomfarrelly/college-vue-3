@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Faker\Factory;
 use Illuminate\Database\Seeder;
 use App\Models\Course;
