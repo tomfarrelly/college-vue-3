@@ -6,6 +6,8 @@ use App\Http\Controllers\API\CourseController as APICourseController;
 use App\Http\Controllers\API\LecturerController as APILecturerController;
 use App\Http\Controllers\API\EnrolmentController as APIEnrolmentController;
 
+use App\Http\Controllers\API\PassportController as APIPassportController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -21,10 +23,14 @@ use App\Http\Controllers\API\EnrolmentController as APIEnrolmentController;
 //     return $request->user();
 // });
 
+Route::post('register', [APIPassportController::class, 'register']);
+Route::post('login', [APIPassportController::class, 'login']);
 
-Route::middleware('api')->group(function () {
-  // Route::get('/books', [APIBookController::class, 'index']);
-
+Route::middleware('auth:api')->group(function () {
+  
+    Route::get('user', [APIPassportController::class, 'user']);
+    Route::get('logout', [APIPassportController::class, 'logout']);
+  
     Route::resource('courses', APICourseController::class)->except([
         'create', 'edit'
     ]);
