@@ -2,7 +2,7 @@
 @Author: tomfarrelly
 @Date:   2021-03-02T10:21:12+00:00
 @Last modified by:   tomfarrelly
-@Last modified time: 2021-04-20T23:00:12+01:00
+@Last modified time: 2021-04-21T04:09:38+01:00
 -->
 
 
@@ -18,7 +18,7 @@
     <br>
 
     <button type="button" class="btn btn-success" align="center" @click="getCourses()">Get Courses</button>
-    
+
     <router-link :to="{ name: 'courses_create'}">
     <button type="button" class="btn btn-primary float-right" align="right">Create</button>
     </router-link>

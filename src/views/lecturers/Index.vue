@@ -2,7 +2,7 @@
 @Author: tomfarrelly
 @Date:   2021-03-02T10:21:12+00:00
 @Last modified by:   tomfarrelly
-@Last modified time: 2021-04-20T22:58:47+01:00
+@Last modified time: 2021-04-21T04:09:48+01:00
 -->
 
 
@@ -14,7 +14,7 @@
   <br>
 
   <b-form-input type="search" v-model="term" v-on:keyup.enter="searchLecturer()" placeholder="Search lecturer by title"></b-form-input>
-  
+
 
     <br>
 

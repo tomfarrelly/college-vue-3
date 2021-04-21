@@ -2,7 +2,7 @@
 @Author: tomfarrelly
 @Date:   2021-03-02T10:56:03+00:00
 @Last modified by:   tomfarrelly
-@Last modified time: 2021-04-20T22:25:42+01:00
+@Last modified time: 2021-04-21T04:09:49+01:00
 -->
 
 
@@ -12,7 +12,7 @@
     <router-link :to="{ name: 'lecturers_edit'}">
     <button type="button" class="btn btn-primary " align="right" >Edit</button>
     </router-link>
-  
+
   <button ype="button" class="btn btn-danger float-right" @click="deleteLecturer()">Delete </button>
 
 

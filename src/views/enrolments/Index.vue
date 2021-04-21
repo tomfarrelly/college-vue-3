@@ -2,7 +2,7 @@
 @Author: tomfarrelly
 @Date:   2021-03-02T10:21:12+00:00
 @Last modified by:   tomfarrelly
-@Last modified time: 2021-04-20T22:45:55+01:00
+@Last modified time: 2021-04-21T04:09:44+01:00
 -->
 
 
@@ -34,7 +34,7 @@
     <b-table striped hover :items="enrolments" :fields="fields">
       <template #cell(id)="data">
         <router-link :to="{ name: 'enrolments_show', params: { id: data.item.id }}">{{ data.item.id }}</router-link>
-        
+
       </template>
     </b-table>
 

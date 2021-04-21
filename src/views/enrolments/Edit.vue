@@ -2,7 +2,7 @@
 @Author: tomfarrelly
 @Date:   2021-03-02T10:59:59+00:00
 @Last modified by:   tomfarrelly
-@Last modified time: 2021-04-21T02:03:19+01:00
+@Last modified time: 2021-04-21T04:09:43+01:00
 -->
 
 
@@ -84,7 +84,7 @@ import axios from 'axios';
 export default {
   name: 'EnrolmentEdit',
   components: {
-    
+
   },
   data() {
     return {
